@@ -15,7 +15,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ## R script does following:
 
-1. unzips the training and test data files into a working directory
+1. loads the raw training and test data files into a working directory
 2. merges the data into a homogenous dataset including subject and activity
 3. creates the data column names to descriptive names
 4. modifies the activity data to descriptive names
