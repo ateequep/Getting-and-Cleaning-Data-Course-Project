@@ -52,4 +52,5 @@ filteredData[, `:=`(activity= ifelse(activity==1,"WALKING",
 ## Tidy data set with the average of each variable for each activity and each subject.
 tidyData <- filteredData %>% group_by(subject,activity) %>% summarise_each(funs(mean))
 
+## Output the tody dataset
 write.table(tidyData, "./Subject_Activity_Averages.txt",row.names=FALSE)
